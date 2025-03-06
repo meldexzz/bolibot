@@ -361,7 +361,7 @@ if (!['owner-unbanchat.js'].includes(name) && chat && chat.isBanned && !isROwner
 if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && name != 'tool-delete.js' && chat?.isBanned && !isROwner) return 
 if (m.text && user.banned && !isROwner) {
 if (user.antispam > 2) return
-m.reply(`⚠️ ESTAS BANEADO ⚠️\n*• Motivo:* ${user.messageSpam === 0 ? 'Spam' : user.messageSpam}\n*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*\n\n👉 +525649707515`)
+m.reply(`⚠️ ESTAS BANEADO ⚠️\n*• Motivo:* ${user.messageSpam === 0 ? 'Spam' : user.messageSpam}\n*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*\n\n👉 ${fb}`)
 user.antispam++	
 return
 }
@@ -477,7 +477,7 @@ await plugin.after.call(this, m, extra)
 console.error(e)
 }}
 if (m.limit) m.reply(`*${+m.limit}* diamante 💎usados`)
-if (m.money) m.reply(+m.money + ' BOLICoins usados 🪙') 
+if (m.money) m.reply(+m.money + ' LoliCoins usados 🪙') 
 }
 break
 }}} catch (e) {
@@ -532,7 +532,7 @@ if (opts['autoread']) await this.readMessages([m.key])
 if (settingsREAD.autoread2) await this.readMessages([m.key])  
 //if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
 	    
-if (!m.fromMem && m.text.match(/(@5492266466080|bolillo)/gi)) {
+if (!m.fromMem && m.text.match(/(@5492266466080|LoliBot|Botsito|Gata|:v)/gi)) {
 let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}}}
@@ -583,8 +583,10 @@ let or = ['texto', 'audio'];
 let media = or[Math.floor(Math.random() * 2)];
 if (media === 'texto') {
 this.sendMessage(id, {text: text, contextInfo: { forwardedNewsletterMessageInfo: { newsletterJid: '120363355261011910@newsletter', serverMessageId: '', newsletterName: 'LoliBot ✨' },forwardingScore: 9999999, isForwarded: true, mentionedJid: [user], externalAdReply: { showAdAttribution: true, renderLargerThumbnail: true, thumbnail: apii.data, title: [wm, ' ' + wm + '😊', '🌟'].getRandom(), containsAutoReply: true, mediaType: 1, sourceUrl: [nna, nna2, nnntt, yt].getRandom()}}}, { quoted: fkontak2 });
-}}}
-
+}
+if (media === 'audio') {
+this.sendMessage(id, { audio: { url: vn }, contextInfo: { forwardedNewsletterMessageInfo: { newsletterJid: '120363355261011910@newsletter', serverMessageId: '', newsletterName: 'LoliBot ✨' }, forwardingScore: 9999999, isForwarded: true, mentionedJid: [user], externalAdReply: { mediaType: 1, previewType: "PHOTO", thumbnail: apii.data, title: `乂 ＷＥＬＣＯＭＥ 乂`, body: [wm, ' ' + wm + '😊', '🌟'].getRandom(), showAdAttribution: true, renderLargerThumbnail: true, sourceUrl: [nna, nna2, nnntt, yt].getRandom()}}, ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: fkontak2 });
+}}}}            
 			    
 break
 case 'promote':
@@ -629,9 +631,9 @@ if (!isAnticall) return
 for (let nk of callUpdate) {
 if (nk.isGroup == false) {
 if (nk.status == "offer") {
-let callmsg = await this.reply(nk.from, `ʜᴏʟᴀ *@${nk.from.split('@')[0]}*, ʟᴀs ${nk.isVideo ? 'videollamadas' : 'llamadas'} ɴᴏ ᴇsᴛᴀɴ ᴘᴇʀᴍɪᴛɪᴅᴀs, sᴇʀᴀs ʙʟᴏǫᴜᴇᴀᴅᴏ.\n\nsɪ ᴀᴄᴄɪᴅᴇɴᴛᴀʟᴍᴇɴᴛᴇ ʟʟᴀᴍᴀsᴛᴇ ᴘᴏɴɢᴀsᴇ ᴇɴ ᴄᴏɴᴛᴀᴄᴛᴏ ᴄᴏɴ ᴍɪ ᴄʀᴇᴀᴅᴏʀ ᴘᴀʀᴀ ǫᴜᴇ ᴛᴇ ᴅᴇsʙʟᴏǫᴜᴇᴇ!\n\nɢʀᴜᴘᴏ ᴀsɪsᴛᴇɴᴄɪᴀ : `, false, { mentions: [nk.from] })
-let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Meldexzz 👑;;;\nFN:Meldexzz\nORG:Meldexzz 👑\nTITLE:\nitem1.TEL;waid=5215649707515:+52 5649707515\nitem1.X-ABLabel:Meldexzz👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:Meldexzz 👑\nEND:VCARD`
-await this.sendMessage(nk.from, { contacts: { displayName: 'Meldexzz 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
+let callmsg = await this.reply(nk.from, `ʜᴏʟᴀ *@${nk.from.split('@')[0]}*, ʟᴀs ${nk.isVideo ? 'videollamadas' : 'llamadas'} ɴᴏ ᴇsᴛᴀɴ ᴘᴇʀᴍɪᴛɪᴅᴀs, sᴇʀᴀs ʙʟᴏǫᴜᴇᴀᴅᴏ.\n\nsɪ ᴀᴄᴄɪᴅᴇɴᴛᴀʟᴍᴇɴᴛᴇ ʟʟᴀᴍᴀsᴛᴇ ᴘᴏɴɢᴀsᴇ ᴇɴ ᴄᴏɴᴛᴀᴄᴛᴏ ᴄᴏɴ ᴍɪ ᴄʀᴇᴀᴅᴏʀ ᴘᴀʀᴀ ǫᴜᴇ ᴛᴇ ᴅᴇsʙʟᴏǫᴜᴇᴇ!\n\nɢʀᴜᴘᴏ ᴀsɪsᴛᴇɴᴄɪᴀ ғᴀᴄᴇʙᴏᴏᴋ: ${fb}`, false, { mentions: [nk.from] })
+let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑;;;\nFN:𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿\nORG:𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑\nTITLE:\nitem1.TEL;waid=5214774444444:+52 477 444 4444\nitem1.X-ABLabel:𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑\nEND:VCARD`
+await this.sendMessage(nk.from, { contacts: { displayName: '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
 await this.updateBlockStatus(nk.from, 'block')
 }}}}
 
@@ -653,22 +655,19 @@ console.error(e)
 
 global.dfail = (type, m, conn, usedPrefix) => {
 let msg = {
-rowner: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖',
-owner: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖',
-mods: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖',
-premium: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖',
-group: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖 𝙨𝙤𝙡𝙤 𝙚𝙣 𝙜𝙧𝙪𝙥𝙤𝙨. 🥖',
-private: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖 𝙨𝙤𝙡𝙤 𝙚𝙣 𝙥𝙧𝙞𝙫𝙖𝙙𝙤. 🥖',
-admin: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖 𝙨𝙤𝙡𝙤 𝙥𝙖𝙧𝙖 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨. 🥖',
-botAdmin: '𝙃𝙖𝙯𝙢𝙚 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧 𝙥𝙖𝙧𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖𝙧. 🥖',
-unreg: '𝙉𝙊 𝙀𝙎𝙏𝘼𝙎 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝘼𝘿𝙊.🥖\n\n𝘕𝘰 𝘢𝘱𝘢𝘳𝘦𝘤𝘦𝘴 𝘦𝘯 𝘮𝘪 𝘣𝘢𝘴𝘦 𝘥𝘦 𝘥𝘢𝘵𝘰𝘴.\n\n𝘗𝘢𝘳𝘢 𝘱𝘰𝘥𝘦𝘳 𝘶𝘴𝘢𝘳𝘮𝘦, 𝘦𝘴𝘤𝘳𝘪𝘣𝘦 𝘦𝘭 𝘴𝘪𝘨𝘶𝘪𝘦𝘯𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰:\n\n#𝙧𝙚𝙜 𝙣𝙤𝙢𝙗𝙧𝙚.𝙚𝙙𝙖𝙙\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤: #𝙧𝙚𝙜 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.19',
+rowner: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖', 
+owner: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖', 
+mods: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖', 
+premium: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖', 
+group: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖 𝙨𝙤𝙡𝙤 𝙚𝙣 𝙜𝙧𝙪𝙥𝙤𝙨. 🥖', 
+private: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖 𝙨𝙤𝙡𝙤 𝙚𝙣 𝙥𝙧𝙞𝙫𝙖𝙙𝙤. 🥖', 
+admin: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖 𝙨𝙤𝙡𝙤 𝙥𝙖𝙧𝙖 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨. 🥖', 
+botAdmin: '𝙃𝙖𝙯𝙢𝙚 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧 𝙥𝙖𝙧𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖𝙧. 🥖', 
+unreg: '𝙉𝙊 𝙀𝙎𝙏𝘼𝙎 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝘼𝘿𝙊.🥖\n\n𝘕𝘰 𝘢𝘱𝘢𝘳𝘦𝘤𝘦𝘴 𝘦𝘯 𝘮𝘪 𝘣𝘢𝘴𝘦 𝘥𝘦 𝘥𝘢𝘵𝘰𝘴.\n\n𝘗𝘢𝘳𝘢 𝘱𝘰𝘥𝘦𝘳 𝘶𝘴𝘢𝘳𝘮𝘦, 𝘦𝘴𝘤𝘳𝘪𝘣𝘦 𝘦𝘭 𝘴𝘪𝘨𝘶𝘪𝘦𝘯𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰:\n\n#𝙧𝙚𝙜 𝙣𝙤𝙢𝙗𝙧𝙚.𝙚𝙙𝙖𝙙\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤: #𝙧𝙚𝙜 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.19', 
 restrict: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖'
 }[type]
-if (msg) return conn.sendMessage(m.chat, {text: msg, contextInfo: {mentionedJid: null, forwardingScore: 1, isForwarded: false // Se asegura de que no se marque como reenviado
-    }
-}, { quoted: m })
+if (msg) return conn.sendMessage(m.chat, {text: msg, contextInfo: { mentionedJid: null, forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363355261011910@newsletter', serverMessageId: '', newsletterName: 'LoliBot ✨' }, externalAdReply : {mediaUrl: null, mediaType: 1, description: null, "title": `ℹ️𝐈𝐍𝐅𝐎 ℹ️`, body: wm, previewType: 0, "thumbnail": img.getRandom(), sourceUrl: [nna, nna2, md, yt, nn, tiktok].getRandom()}}}, { quoted: m })
 }
-
 
 const file = global.__filename(import.meta.url, true);
 watchFile(file, async () => {
