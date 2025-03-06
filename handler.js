@@ -361,7 +361,7 @@ if (!['owner-unbanchat.js'].includes(name) && chat && chat.isBanned && !isROwner
 if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && name != 'tool-delete.js' && chat?.isBanned && !isROwner) return 
 if (m.text && user.banned && !isROwner) {
 if (user.antispam > 2) return
-m.reply(`⚠️ ESTAS BANEADO ⚠️\n*• Motivo:* ${user.messageSpam === 0 ? 'Spam' : user.messageSpam}\n*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*\n\n👉 ${fb}`)
+m.reply(`⚠️ ESTAS BANEADO ⚠️\n*• Motivo:* ${user.messageSpam === 0 ? 'Spam' : user.messageSpam}\n*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*\n\n👉 +52 5649707515`)
 user.antispam++	
 return
 }
