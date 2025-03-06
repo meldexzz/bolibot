@@ -11,7 +11,7 @@ var handler = async (m, { conn, text, participants }) => {
         let msg = generateWAMessageFromContent(m.chat, { 
             [m.quoted ? q.mtype : 'extendedTextMessage']: 
             m.quoted ? c.message?.[q.mtype] || { text: c.text || '' } : { text: text }
-        }, { userJid: conn.user.id })
+        }, { userJid: conn.user.id, mentions: users }) // 🔹 Agregado mentions correctamente
 
         await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
     } catch {  
@@ -26,19 +26,19 @@ var handler = async (m, { conn, text, participants }) => {
             if (mediax) {
                 let options = { mentions: users, caption: htextos }
                 if (quoted.mtype === 'imageMessage') {
-                    conn.sendMessage(m.chat, { image: mediax, ...options }, { quoted: null })
+                    conn.sendMessage(m.chat, { image: mediax, ...options }, { quoted: m }) // 🔹 Ahora cita el mensaje correctamente
                 } else if (quoted.mtype === 'videoMessage') {
-                    conn.sendMessage(m.chat, { video: mediax, mimetype: 'video/mp4', ...options }, { quoted: null })
+                    conn.sendMessage(m.chat, { video: mediax, mimetype: 'video/mp4', ...options }, { quoted: m })
                 } else if (quoted.mtype === 'audioMessage') {
-                    conn.sendMessage(m.chat, { audio: mediax, mimetype: 'audio/mp4', fileName: `Hidetag.mp3`, ...options }, { quoted: null })
+                    conn.sendMessage(m.chat, { audio: mediax, mimetype: 'audio/mp4', fileName: `Hidetag.mp3`, ...options }, { quoted: m })
                 } else if (quoted.mtype === 'stickerMessage') {
-                    conn.sendMessage(m.chat, { sticker: mediax, mentions: users }, { quoted: null })
+                    conn.sendMessage(m.chat, { sticker: mediax, mentions: users }, { quoted: m })
                 }
             } else {
-                conn.sendMessage(m.chat, { text: htextos, mentions: users }, { quoted: null }) // 🔹 No cita el mensaje original
+                conn.sendMessage(m.chat, { text: htextos, mentions: users }, { quoted: m }) // 🔹 Ahora cita el mensaje correctamente
             }
         } else {
-            conn.sendMessage(m.chat, { text: htextos, mentions: users }, { quoted: null }) // 🔹 No cita el mensaje original
+            conn.sendMessage(m.chat, { text: htextos, mentions: users }, { quoted: m }) // 🔹 Ahora cita el mensaje correctamente
         }
     }
 }
@@ -49,4 +49,3 @@ handler.admin = true
 handler.register = true 
 
 export default handler
-
