@@ -361,7 +361,7 @@ if (!['owner-unbanchat.js'].includes(name) && chat && chat.isBanned && !isROwner
 if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && name != 'tool-delete.js' && chat?.isBanned && !isROwner) return 
 if (m.text && user.banned && !isROwner) {
 if (user.antispam > 2) return
-m.reply(`⚠️ ESTAS BANEADO ⚠️\n*• Motivo:* ${user.messageSpam === 0 ? 'Spam' : user.messageSpam}\n*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*\n\n👉 ${fb}`)
+m.reply(`⚠️ ESTAS BANEADO ⚠️\n*• Motivo:* ${user.messageSpam === 0 ? 'Spam' : user.messageSpam}\n*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*\n\n👉 +525649707515`)
 user.antispam++	
 return
 }
@@ -663,11 +663,14 @@ group: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙛𝙪𝙣𝙘𝙞𝙤�
 private: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖 𝙨𝙤𝙡𝙤 𝙚𝙣 𝙥𝙧𝙞𝙫𝙖𝙙𝙤. 🥖',
 admin: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖 𝙨𝙤𝙡𝙤 𝙥𝙖𝙧𝙖 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨. 🥖',
 botAdmin: '𝙃𝙖𝙯𝙢𝙚 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧 𝙥𝙖𝙧𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣𝙖𝙧. 🥖',
-unreg: '𝙉𝙊 𝙀𝙎𝙏𝘼𝙎 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝘼𝘿𝙊.🥖\n\n𝘕𝘰 𝘢𝘱𝘢𝘳𝘦𝘤𝘦𝘴 𝘦𝘯 𝘮𝘪 𝘣𝘢𝘴𝘦 𝘥𝘦 𝘥𝘢𝘵𝘰𝘴.\n\n𝘗𝘢𝘳𝘢 𝘱𝘰𝘥𝘦𝘳 𝘶𝘴𝘢𝘳𝘮𝘦, 𝘦𝘴𝘤𝘳𝘪𝘣𝘦 𝘦𝘭 𝘴𝘪𝘨𝘶𝘪𝘦𝘯𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰\n\n#𝙧𝙚𝙜 𝙣𝙤𝙢𝙗𝙧𝙚.𝙚𝙙𝙖𝙙\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤: #𝙧𝙚𝙜 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.19',
+unreg: '𝙉𝙊 𝙀𝙎𝙏𝘼𝙎 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝘼𝘿𝙊.🥖\n\n𝘕𝘰 𝘢𝘱𝘢𝘳𝘦𝘤𝘦𝘴 𝘦𝘯 𝘮𝘪 𝘣𝘢𝘴𝘦 𝘥𝘦 𝘥𝘢𝘵𝘰𝘴.\n\n𝘗𝘢𝘳𝘢 𝘱𝘰𝘥𝘦𝘳 𝘶𝘴𝘢𝘳𝘮𝘦, 𝘦𝘴𝘤𝘳𝘪𝘣𝘦 𝘦𝘭 𝘴𝘪𝘨𝘶𝘪𝘦𝘯𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰:\n\n#𝙧𝙚𝙜 𝙣𝙤𝙢𝙗𝙧𝙚.𝙚𝙙𝙖𝙙\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤: #𝙧𝙚𝙜 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.19',
 restrict: '𝙀𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙨𝙤𝙡𝙤 𝙥𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧𝙡𝙤 𝙈𝙚𝙡𝙙𝙚𝙭𝙯𝙯.  🥖'
 }[type]
-if (msg) return conn.sendMessage(m.chat, {text: msg, contextInfo: { mentionedJid: null, forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '', serverMessageId: '', newsletterName: 'Bolillobot' }, externalAdReply : {mediaUrl: null, mediaType: 1, description: null, "title": `ℹ️𝐈𝐍𝐅𝐎 ℹ️`, body: wm, previewType: 0, "thumbnail": img.getRandom(), sourceUrl: [nna, nna2, md, yt, nn, tiktok].getRandom()}}}, { quoted: m })
+if (msg) return conn.sendMessage(m.chat, {text: msg, contextInfo: {mentionedJid: null, forwardingScore: 1, isForwarded: false // Se asegura de que no se marque como reenviado
+    }
+}, { quoted: m })
 }
+
 
 const file = global.__filename(import.meta.url, true);
 watchFile(file, async () => {
