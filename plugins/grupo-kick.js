@@ -10,5 +10,5 @@ handler.command = ['kick', 'expulsar']
 handler.admin = true
 handler.group = true
 handler.botAdmin = true
-handler.register = true 
+handler.register = false 
 export default handler
