@@ -7,6 +7,7 @@ let countryCodes = {
 };
 
 let handler = async (m, { isOwner, isAdmin, conn, text, participants, args, command }) => {
+  // Verificar que solo administradores o propietarios pueden usar el comando
   if (!(isAdmin || isOwner)) {
     global.dfail('admin', m, conn);
     throw false;
@@ -15,14 +16,15 @@ let handler = async (m, { isOwner, isAdmin, conn, text, participants, args, comm
   let pesan = args.join` `;
   let oi = `*𝙈𝙚𝙣𝙨𝙖𝙟𝙚:* ${pesan}`;
   let teks = `𝙄𝙉𝙑𝙊𝘾𝘼𝙉𝘿𝙊 𝘽𝙊𝙇𝙄𝙇𝙇𝙊𝙎. 🥖\n\n${oi}\n\n*𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨:*\n`;
-  
+
+  // Solo se agrega la información de los participantes sin hacer validación de registros
   for (let mem of participants) {
     let num = mem.id.split('@')[0];
     let code = Object.keys(countryCodes).find(c => num.startsWith(c)) || '🌍';
     let flag = countryCodes[code] || '🌍';
     teks += `${flag} @${num}\n`;
   }
-  
+
   teks += `\n${wm}`;
   conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) });
 };
