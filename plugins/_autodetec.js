@@ -38,7 +38,7 @@ await this.sendMessage(m.chat, { text: `𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 *${m.messa
 let subject = groupMetadata.subject
 let descs = groupMetadata.desc || "¡𝙐𝙉 𝙂𝙍𝙐𝙋𝙊 𝙂𝙀𝙉𝙄𝘼𝙇!\n 𝙎𝙄𝙉 𝙍𝙀𝙂𝙇𝘼𝙎...🥖";
 let userName = `${m.messageStubParameters[0].split`@`[0]}`;
-let defaultWelcome = `┏━━━━━━━━━━━━\n┃¡𝘽𝙄𝙀𝙉𝙑𝙀𝙉𝙄𝘿𝙊!\n┃━━━━━━━━━━━━\n┃ 𝙃𝙊𝙇𝘼 @${userName} 👋 𝘽𝙄𝙀𝙉𝙑𝙀𝙉𝙄𝘿𝙊 𝘼*\n┃ *_${subject} ✨_*\n┃\n┃ 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊 𝙋𝙊𝘿𝙍Á𝙎\n┃ 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝘼𝙍\n┠ 𝘼𝙈𝙄𝙎𝙏𝘼𝘿𝙀𝙎 \n┠ 𝙐𝙉 𝘽𝙊𝙏 𝙎𝙀𝙓𝙔\n┃\n┃ 𝙋𝙐𝙀𝘿𝙀𝙎 𝙎𝙊𝙇𝙄𝘾𝙄𝙏𝘼𝙍 𝙈𝙄 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀\n┃ 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘾𝙊𝙉:\n┠ .𝙢𝙚𝙣𝙪\n┃\n┃ 𝘼𝙌𝙐Í 𝙏𝙄𝙀𝙉𝙀𝙎 𝙇𝘼 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄Ó𝙉\n┃ 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊, 𝙇É𝙀𝙇𝘼\n┃\n\n${descs}\n\n┃\n┃ 𝘿𝙄𝙎𝙁𝙍𝙐𝙏𝘼 𝘿𝙀𝙇 𝙈𝙐𝙉𝘿𝙊\n┃ 𝘿𝙀 𝙇𝙊𝙎 𝘽𝙊𝙇𝙄𝙇𝙇𝙊𝙎.🥖\n┃\n┗━━━━━━━━━━━`;
+let defaultWelcome = ``;
 let textWel = chat.sWelcome ? chat.sWelcome
 .replace(/@user/g, `@${userName}`)
 .replace(/@group/g, subject) 
@@ -62,7 +62,7 @@ sourceUrl: [nna, nna2, yt].getRandom()}}}, { quoted: fkontak })
 } else if (chat.welcome && (m.messageStubType == 28 || m.messageStubType == 32) && this.user.jid != global.conn.user.jid ) {
 let subject = groupMetadata.subject;
 let userName = `${m.messageStubParameters[0].split`@`[0]}`;
-let defaultBye = `┏━━━━━━━━━━━━\n┃𝘼𝘿𝙄Ó𝙎\n┃━━━━━━━━━━━━\n┃ *_☠ Se fue @${userName}_* \n┃ 𝙋Ó𝙉𝙂𝘼𝙉𝙇𝙀 𝙑𝙀𝙍𝙂𝘼 𝙀𝙉 𝙇𝘼 𝘽𝙊𝘾𝘼 \n┃ 𝙋𝙊𝙍 𝙉𝙊 𝘾𝙊𝙈𝙀𝙍 𝘽𝙊𝙇𝙄𝙇𝙇𝙊. 🥖\n┗━━━━━━━━━━`;
+let defaultBye = ``;
 let textBye = chat.sBye ? chat.sBye
 .replace(/@user/g, `@${userName}`)
 .replace(/@group/g, subject)
