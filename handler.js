@@ -48,7 +48,7 @@ if (user.money < 0) user.money = 0;
 if (!isNumber(user.limit)) user.limit = 8;
 if (user.limit < 0) user.limit = 0; 
 if (!('premium' in user)) user.premium = false;
-if (!('registered' in user)) user.registered = false;
+if (!('registered' in user)) user.registered = true;
 if (!user.registered) {
 if (!('name' in user)) user.name = m.name;
 if (!isNumber(user.age)) user.age = -1;
