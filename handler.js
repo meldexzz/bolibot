@@ -84,7 +84,7 @@ global.db.data.users[m.sender] = {
 exp: 0,
 money: 10,
 limit: 8,
-registered: false,     
+registered: true,     
 premium: false,
 regTime: -1,        
 premiumTime: 0,     
