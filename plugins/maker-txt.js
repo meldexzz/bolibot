@@ -17,6 +17,6 @@ handler.help = ['txt', 'brat']
 handler.tags = ['game']
 handler.command = ['txt', 'escribir', 'brat']
 handler.limit = 1
-handler.register = true 
+handler.register = false 
 export default handler
   
