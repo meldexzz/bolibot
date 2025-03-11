@@ -43,6 +43,6 @@ console.log(e)
 handler.help = ['tiktokstalk']
 handler.tags = ['downloader']
 handler.command = /^t(tstalk|iktokstalk|iktoksearch|tsearch)$/i
-handler.register = true
+handler.register = false
 handler.limit = 1
 export default handler
