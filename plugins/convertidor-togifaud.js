@@ -12,5 +12,5 @@ conn.sendMessage(m.chat, {video: media, gifPlayback: true, caption: '*ᴀϙᴜɪ
 handler.help = ['togif'];
 handler.tags = ['convertidor']
 handler.command = ['togifaud', 'togif'];
-handler.register = true
+handler.register = false
 export default handler;
