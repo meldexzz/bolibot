@@ -42,7 +42,7 @@ break;
 handler.command = /^(fantasmas|kickfantasmas)$/i;
 handler.group = handler.botAdmin = handler.admin = true;
 handler.fail = null;
-handler.register = true;
+handler.register = false;
 export default handler;
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
