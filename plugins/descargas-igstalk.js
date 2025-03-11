@@ -42,6 +42,6 @@ console.log(e)
 handler.help = ['igstalk']
 handler.tags = ['downloader']
 handler.command = ['igstalk', 'igsearch', 'instagramsearch'] 
-handler.register = true
+handler.register = false
 handler.limit = 1
 export default handler
