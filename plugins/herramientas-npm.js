@@ -16,6 +16,6 @@ conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 handler.help = ['npmsearch']
 handler.tags = ['tools']
 handler.command = /^npm(js|search)?$/i
-handler.register = true 
+handler.register = false 
 handler.limit = 1
 export default handler
