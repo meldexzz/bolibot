@@ -74,7 +74,7 @@ m.react('❌')
 handler.help = ['spotify']
 handler.tags = ['downloader']
 handler.command = /^(spotify|music)$/i
-handler.register = true
+handler.register = false
 //handler.limit = 1
 handler.level = 2
 export default handler
