@@ -11,6 +11,6 @@ handler.help = ['infogp']
 handler.tags = ['group']
 handler.command = ['infogrupo', 'groupinfo', 'infogp'] 
 handler.group = true
-handler.register = true
+handler.register = false
 
 export default handler
