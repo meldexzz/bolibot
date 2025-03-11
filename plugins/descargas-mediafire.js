@@ -75,7 +75,7 @@ m.react(`❌`)
 handler.help = ['mediafire', 'mediafiredl'];
 handler.tags = ['downloader'];
 handler.command = /^(mediafire|mediafiredl|dlmediafire)$/i
-handler.register = true
+handler.register = false
 handler.limit = 3
 export default handler;
 
