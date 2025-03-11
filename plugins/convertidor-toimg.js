@@ -13,5 +13,5 @@ await conn.sendFile(m.chat, out, 'error.png', null, m, null, fake);
 handler.help = ['toimg (reply)'];
 handler.tags = ['convertidor']
 handler.command = ['toimg', 'jpg', 'img'];
-handler.register = true
+handler.register = false
 export default handler;
