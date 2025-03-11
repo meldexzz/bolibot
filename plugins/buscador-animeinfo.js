@@ -48,5 +48,5 @@ m.react("❌")
 handler.help = ['animeinfo']
 handler.tags = ['buscadores']
 handler.command = /^(anime|animeinfo)$/i;
-handler.register = true
+handler.register = false
 export default handler;
