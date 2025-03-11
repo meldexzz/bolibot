@@ -31,7 +31,7 @@ conn.reply(m.chat, `${isClose == 'not_announcement' ? '*El grupo ha sido cerrado
 handler.help = ['grouptime *<open/close>* *<número>*'];
 handler.tags = ['group'];
 handler.command = /^(grouptime|gctime)$/i;
-handler.register = true 
+handler.register = false 
 handler.botAdmin = true;
 handler.group = true;
 
