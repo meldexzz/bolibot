@@ -19,5 +19,5 @@ conn.reply(m.chat, info, m)
 handler.help = ['grupos']
 handler.tags = ['main']
 handler.command = /^linkgc|grupos|gruposgatabot|gatabotgrupos|gruposdegatabot|groupofc|gruposgb|grupogb|groupgb$/i
-handler.register = true 
+handler.register = false 
 export default handler
