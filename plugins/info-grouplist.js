@@ -42,5 +42,5 @@ m.reply(`${wm} _*ESTÁ EN ESTOS GRUPOS:*_\n*• Total grupo:* ${totalGroups}\n\n
 handler.help = ['groups', 'grouplist']
 handler.tags = ['main']
 handler.command = /^(groups|grouplist|listadegrupo|gruposlista|listagrupos|listadegrupos|grupolista|listagrupo)$/i
-handler.register = true
+handler.register = false
 export default handler
