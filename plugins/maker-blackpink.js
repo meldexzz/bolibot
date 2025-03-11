@@ -13,5 +13,5 @@ handler.help = ['blackpink *<texto>*']
 handler.tags = ['logo']
 handler.command = /^(blackpink)$/i
 handler.limit = 3
-handler.register = true 
+handler.register = false 
 export default handler
