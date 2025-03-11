@@ -18,7 +18,7 @@ await conn.sendFile(m.chat, ytres[0].image, 'thumbnail.jpg', textoo, m, null, fa
 handler.help = ['playlist', 'yts'];
 handler.tags = ['downloader'];
 handler.command = ['playvid2', 'playlist', 'playlista', 'yts', 'ytsearch'];
-handler.register = true;
+handler.register = false;
 export default handler;
 
 /*Codigo con la listas obsoleto
