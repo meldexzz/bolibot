@@ -33,5 +33,5 @@ m.reply(txt);
 handler.help = ['quemusica']
 handler.tags = ['tools']
 handler.command = /^quemusica|quemusicaes|whatmusic$/i;
-handler.register = true 
+handler.register = false 
 export default handler;
