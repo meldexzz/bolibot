@@ -108,7 +108,7 @@ m.reply(`❌ ¡𝙄𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙤! 𝙄𝙣𝙩𝙚𝙣�
 handler.help = ['acertijo', 'pelicula', 'trivia'];
 handler.tags = ['game'];
 handler.command = /^(acertijo|acert|adivinanza|tekateki|advpe|adv|peliculas|pelicula|trivia|triviador)$/i;
-handler.register = true;
+handler.register = false;
 
 export default handler;
 
