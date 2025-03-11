@@ -19,7 +19,7 @@ await conn.sendMessage(m.chat, {image: {url: res.image}, caption: `*💫 𝐀�
 handler.help = ['logos'];
 handler.tags = ['logo'];
 handler.command = /^(logo|logos|logos2)$/i;
-handler.register = true 
+handler.register = false 
 handler.limit = 1
 export default handler;
 
