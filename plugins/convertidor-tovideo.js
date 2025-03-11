@@ -20,5 +20,5 @@ await conn.sendFile(m.chat, out, 'error.mp4', '*✅ 𝐄𝐱𝐢𝐭𝐨*', m, n
 handler.help = ['tovideo'];
 handler.tags = ['convertidor']
 handler.command = ['tovideo', 'tomp4', 'mp4', 'togif'];
-handler.register = true
+handler.register = false
 export default handler;
