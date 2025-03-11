@@ -39,7 +39,7 @@ m.reply(contoh + data + anjuran)
 }}
 handler.help = handler.command = ['piropo', 'chiste', 'reto', 'verdad', 'frases']
 handler.tags = ['game'];
-handler.register = true
+handler.register = false
 export default handler
 
 function pickRandom(list) {
