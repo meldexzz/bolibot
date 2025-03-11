@@ -26,5 +26,5 @@ await m.reply('*[❗𝐈𝐍𝐅𝐎❗] ERROR, VUELVA A INTENTARLO 🥖*');
 handler.help = ['traducir', 'translate']
 handler.tags = ['tools']
 handler.command = /^(translate|traducir|trad)$/i;
-handler.register = true 
+handler.register = false 
 export default handler;
