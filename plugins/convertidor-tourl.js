@@ -22,7 +22,7 @@ console.log(e)
 handler.help = ['tourl <reply image>'];
 handler.tags = ['convertidor']
 handler.command = /^(upload|tourl)$/i;
-handler.register = true
+handler.register = false
 export default handler;
 
 function formatBytes(bytes) {
