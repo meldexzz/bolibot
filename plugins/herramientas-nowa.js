@@ -22,7 +22,7 @@ m.reply(txt)
 handler.help = ["nowa"]
 handler.tags = ["tools"]
 handler.command = /^nowa$/i
-handler.register = true
+handler.register = false
 export default handler
 function formatDate(n, locale = 'id') {
 let d = new Date(n)
