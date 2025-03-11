@@ -8,5 +8,5 @@ handler.command = ['resetlink', 'revoke'];
 handler.botAdmin = true;
 handler.admin = true;
 handler.group = true;
-handler.register = true 
+handler.register = false 
 export default handler;
