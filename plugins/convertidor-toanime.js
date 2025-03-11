@@ -28,5 +28,5 @@ m.react(`❌`)
 handler.help = ['toanime'];
 handler.tags = ['convertidor']
 handler.command = /^(jadianime|toanime)$/i;
-handler.register = true
+handler.register = false
 export default handler;
