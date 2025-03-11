@@ -46,7 +46,7 @@ console.log(e)}}
 handler.help = ["speedtest"];
 handler.tags = ["main"];
 handler.command = /^(speedtest?|test?speed)$/i;
-handler.register = true 
+handler.register = false 
 export default handler
 
 function deleteMessage() {
