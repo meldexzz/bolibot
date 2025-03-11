@@ -24,7 +24,7 @@ conn.reply(m.chat, l + readMore + r, m)
 handler.help = ['readmore <text1>|<text2>']
 handler.tags = ['tools']
 handler.command = ['leermas', 'readmore']
-handler.register = true 
+handler.register = false 
 handler.limit = 1
 export default handler
 
