@@ -24,7 +24,7 @@ console.error(error);
 handler.help = ['pinterest <keyword>'];
 handler.tags = ['buscadores'];
 handler.command = /^(pinterest)$/i;
-handler.register = true;
+handler.register = false;
 handler.limit = 1;
 
 export default handler;
