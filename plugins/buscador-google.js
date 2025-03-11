@@ -37,7 +37,7 @@ m.react("❌")
 handler.help = ['google', 'googlef'].map(v => v + ' <pencarian>')
 handler.tags = ['buscadores']
 handler.command = /^googlef?$/i
-handler.register = true
+handler.register = false
 handler.limit = 1;     
 export default handler
 
