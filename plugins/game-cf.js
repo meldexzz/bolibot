@@ -18,6 +18,6 @@ m.reply(`💀 La moneda cayó en *${outcome}* y perdiste *${bet.toLocaleString()
 handler.help = ['cf <cantidad>'];
 handler.tags = ['game'];
 handler.command = ['cf']; 
-handler.register = true;
+handler.register = false;
 
 export default handler;
