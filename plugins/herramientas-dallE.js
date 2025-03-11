@@ -48,7 +48,7 @@ m.react('❌')
 handler.help = ["dalle"]
 handler.tags = ["buscadores"]
 handler.command = ['dall-e', 'dalle', 'ia2', 'cimg', 'openai3', 'a-img', 'aimg', 'imagine'];
-handler.register = true
+handler.register = false
 handler.limit = 1
 export default handler;
 
