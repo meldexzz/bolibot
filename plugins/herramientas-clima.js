@@ -20,5 +20,5 @@ return '*⚠️ ɴᴏ sᴇ ʜᴀɴ ᴇɴᴄᴏɴᴛʀᴀᴅᴏ ʀᴇsᴜ𝙽𝙾
 handler.help = ['clima *<ciudad/país>*'];
 handler.tags = ['tools'];
 handler.command = /^(clima|tiempo)$/i;
-handler.register = true
+handler.register = false
 export default handler;
