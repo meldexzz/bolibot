@@ -10,5 +10,5 @@ handler.help = ['tinyurl', 'acortar'].map((v) => v + ' <link>');
 handler.tags = ['tools'];
 handler.command = /^(tinyurl|short|acortar|corto)$/i;
 handler.fail = null;
-handler.register = true
+handler.register = false
 export default handler;
