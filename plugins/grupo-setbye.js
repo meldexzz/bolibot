@@ -8,5 +8,5 @@ handler.help = ['setbye <text>'];
 handler.tags = ['group'];
 handler.command = ['setbye'];
 handler.admin = true;
-handler.register = true 
+handler.register = false 
 export default handler;
