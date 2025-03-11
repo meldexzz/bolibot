@@ -37,6 +37,6 @@ conn.reply(m.chat, `😱 La ruleta cayó en *${resultColor}* y ${isWin ? 'ganast
 handler.help = ['rt <color> <cantidad>'];
 handler.tags = ['game'];
 handler.command = ['rt'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
