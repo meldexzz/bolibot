@@ -25,7 +25,7 @@ if (res) conn.sendFile(m.chat, res, 'tts.opus', null, m, null, fake, true);
 handler.help = ['tts <lang> <teks>'];
 handler.tags = ['convertidor']
 handler.command = /^g?tts$/i;
-handler.register = true
+handler.register = false
 export default handler;
 
 function tts(text, lang = 'es') {
