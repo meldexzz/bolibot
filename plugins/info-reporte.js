@@ -211,6 +211,6 @@ handler.help = ['reporte', 'request'].map(v => v + ' <teks>')
 handler.tags = ['main']
 handler.exp = 3500
 handler.command = /^(report|request|reporte|bugs|bug|report-owner|reportes|reportar)$/i 
-handler.register = true 
+handler.register = false 
 export default handler
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
