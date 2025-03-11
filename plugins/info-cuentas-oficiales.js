@@ -12,5 +12,5 @@ await conn.reply(m.chat, str, fkontak, {contextInfo: {externalAdReply :{ mediaUr
 handler.help = ['cuentaoficial']
 handler.tags = ['main']
 handler.command = /^cuentasoficiales|owner|creador|owner|cuentaofc|cuentaoficial$/i
-handler.register = true
+handler.register = false
 export default handler
