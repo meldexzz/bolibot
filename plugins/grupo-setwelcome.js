@@ -8,5 +8,5 @@ handler.help = ['setwelcome <text>'];
 handler.tags = ['group'];
 handler.command = ['setwelcome'];
 handler.admin = true;
-handler.register = true 
+handler.register = false 
 export default handler;
