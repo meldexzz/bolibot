@@ -29,5 +29,5 @@ handler.tags = ['group']
 handler.command = ['setppgc', 'setppgrup', 'setppgroup'];
 handler.botAdmin = true;
 handler.admin = true;
-handler.register = true 
+handler.register = false 
 export default handler;
