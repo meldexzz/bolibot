@@ -598,7 +598,7 @@ await m.reply(`🗂️ ʟᴀ ᴏᴘᴄɪᴏɴ ${type} ᴘᴀʀᴀ ${isAll ? 'ᴇ
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['nable']
 handler.command = /^((|guia|en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
-handler.register = true
+handler.register = false
 export default handler;
 
 const more = String.fromCharCode(8206)
