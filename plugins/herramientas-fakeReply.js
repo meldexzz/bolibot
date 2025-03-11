@@ -16,7 +16,7 @@ conn.fakeReply(m.chat, real.join(sp).trimStart(), who, fake.trimEnd(), m.isGroup
 handler.help = ['fake <text> @user <text2>'];
 handler.tags = ['tools'];
 handler.command = /^(fitnah|fakereply|fake)$/;
-handler.register = true
+handler.register = false
 handler.limit = 3
 export default handler;
 
