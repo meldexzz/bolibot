@@ -78,5 +78,5 @@ handler.before = async (m, { conn }) => {
 handler.help = ['ahorcado'];
 handler.tags = ['game'];
 handler.command = ['ahorcado'];
-handler.register = true;
+handler.register = false;
 export default handler;
