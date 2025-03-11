@@ -14,6 +14,6 @@ console.log(e)
 handler.help = ['gimage <query>', 'imagen <query>'];
 handler.tags = ['buscadores'];
 handler.command = /^(gimage|image|imagen)$/i;
-handler.register = true 
+handler.register = false 
 handler.limit = 1
 export default handler;
