@@ -19,7 +19,7 @@ global.db.data.users[m.sender].lastrob = new Date * 1
 handler.help = ['rob']
 handler.tags = ['econ']
 handler.command = ['robar', 'rob']
-handler.register = true
+handler.register = false
 export default handler  
 
 function msToTime(duration) {
