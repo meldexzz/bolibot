@@ -40,5 +40,5 @@ conn.fakeReply(m.chat, str, '13135550002@s.whatsapp.net', `*TUS ESTADISTICAS ðŸ†
 handler.help = ['levelup']
 handler.tags = ['econ']
 handler.command = ['nivel', 'lvl', 'levelup', 'level'] 
-handler.register = true
+handler.register = false
 export default handler
