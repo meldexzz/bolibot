@@ -31,7 +31,7 @@ console.log(e)
 handler.help = ['robar'];
 handler.tags = ['econ'];
 handler.command = /^(crime|crimen)$/i
-handler.register = true
+handler.register = false
 handler.group = true
 export default handler;
 
