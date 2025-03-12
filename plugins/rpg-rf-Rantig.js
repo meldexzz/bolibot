@@ -66,5 +66,5 @@ await conn.sendMessage(m.chat, {text: textt + `\n\n> _*¡Sigue usando el bot par
 handler.help = ['rf-personajes'];
 handler.tags = ['gacha'];
 handler.command = ['rf-personajes',  'ranking'];
-handler.register = true;
+handler.register = false;
 export default handler;
