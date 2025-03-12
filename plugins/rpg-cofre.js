@@ -24,7 +24,7 @@ handler.help = ['daily'];
 handler.tags = ['econ'];
 handler.command = ['coffer', 'cofre', 'abrircofre', 'cofreabrir'];
 handler.level = 9
-handler.register = true
+handler.register = false
 export default handler;
 
 function pickRandom(list) {
