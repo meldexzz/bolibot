@@ -15,7 +15,7 @@ console.log(e)}}
 handler.help = ['emojimix'].map(v => v + ' emot1|emot2>')
 handler.tags = ['sticker']
 handler.command = /^(emojimix|emogimix|combinaremojis|crearemoji|emojismix|emogismix)$/i
-handler.register = true
+handler.register = false
 export default handler
 const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
 fetch(url, options)
