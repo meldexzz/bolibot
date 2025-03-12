@@ -52,6 +52,6 @@ m.reply(`⚠️ Has rechazado la solicitud de matrimonio de @${requesterId.split
 handler.help = ['marry @tag', 'pareja']
 handler.tags = ['econ']
 handler.command = ['marry', 'pareja'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
