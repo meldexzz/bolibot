@@ -42,7 +42,7 @@ await conn.sendFile(m.chat, img, 'lp.jpg', str, m, false, { contextInfo: {forwar
 handler.help = ['perfil', 'perfil *@user*']
 handler.tags = ['rg']
 handler.command = /^(perfil|profile)$/i
-handler.register = true
+handler.register = false
 export default handler
 
 const more = String.fromCharCode(8206)
