@@ -18,5 +18,5 @@ conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forw
 handler.help = ['attp'];
 handler.tags = ['sticker']
 handler.command = /^(attp|ttp|ttp2|ttp3|ttp4|attp2)$/i
-handler.register = true
+handler.register = false
 export default handler
