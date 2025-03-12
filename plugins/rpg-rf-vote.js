@@ -49,7 +49,7 @@ global.db.data.users[m.sender].timevot = new Date() * 1;
 handler.help = ['vote <nombre del personaje>'];
 handler.tags = ['gacha'];
 handler.command = ['vote'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
 
