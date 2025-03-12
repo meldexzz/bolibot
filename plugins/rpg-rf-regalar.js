@@ -44,6 +44,6 @@ conn.reply(m.chat,  `🎉 ¡Has regalado a *${character.name}* a @${recipient.sp
 handler.help = ['give @tag nombre_del_personaje'];
 handler.tags = ['gacha'];
 handler.command = ['give', 'regalar-personajes'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
