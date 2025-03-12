@@ -21,5 +21,5 @@ else return m.reply('⚠️ 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙎𝙏�
 handler.help = ['wm <packname>|<author>'];
 handler.tags = ['sticker'];
 handler.command = /^take|robar|wm$/i;
-handler.register = true
+handler.register = false
 export default handler;
