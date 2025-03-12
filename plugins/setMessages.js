@@ -34,6 +34,6 @@ handler.help = ['setcatalogo <mensaje>', 'setcomprar <mensaje>', 'setofertas <me
 handler.tags = ['group'];
 handler.command = ['setcatalogo', 'setcomprar', 'setofertas', 'setcombos'];
 handler.admin = true;
-handler.register = true;
+handler.register = false;
 
 export default handler;
