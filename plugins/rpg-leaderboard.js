@@ -23,7 +23,7 @@ await m.reply(text, null, { mentions: conn.parseMention(text) });
 handler.help = ['leaderboard', 'lb'];
 handler.tags = ['econ'];
 handler.command = ['leaderboard', 'lb', 'top'];
-handler.register = true;
+handler.register = false;
 handler.exp = 3500;
 
 export default handler;
