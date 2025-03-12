@@ -52,6 +52,6 @@ conn.reply(m.chat, message, m, {mentions: [targetUser] });
 handler.help = ['harem @tag'];
 handler.tags = ['gacha'];
 handler.command = ['harem'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
