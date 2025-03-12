@@ -76,7 +76,6 @@ handler.tags = ['downloader']
 handler.command = /^(spotify|music)$/i
 handler.register = false
 //handler.limit = 1
-handler.level = 1
 export default handler
 
 async function spotifyxv(query) {
