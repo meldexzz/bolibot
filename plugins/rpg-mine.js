@@ -26,7 +26,7 @@ global.db.data.users[m.sender].lastmiming = new Date * 1
 handler.help = ['minar']
 handler.tags = ['econ']
 handler.command = ['minar', 'miming', 'mine'] 
-handler.register = true
+handler.register = false
 export default handler
 
 function pickRandom(list) {
