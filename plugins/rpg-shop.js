@@ -14,5 +14,5 @@ conn.reply(m.chat, `╔═❖ *ＮＯＴＡ ＤＥ ＰＡＧＯ*
 handler.help = ['Buy', 'Buyall'];
 handler.tags = ['econ'];
 handler.command = ['buy', 'buyall'];
-handler.register = true
+handler.register = false
 export default handler;
