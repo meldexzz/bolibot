@@ -77,7 +77,7 @@ handler.help = ['transfer'].map(v => v + ' [tipo] [cantidad] [@tag]')
 handler.tags = ['econ'];
 handler.command = ['payxp', 'transfer', 'darxp', 'dar', 'enviar', 'transferir'] 
 handler.disabled = false
-handler.register = true
+handler.register = false
 export default handler
 
 function special(type) {
