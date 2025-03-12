@@ -21,7 +21,7 @@ conn.fakeReply(m.chat, text, '13135550002@s.whatsapp.net', `🎁 Obtener un rega
 handler.help = ['daily', 'claim'];
 handler.tags = ['econ'];
 handler.command = ['daily', 'claim'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
 
