@@ -282,7 +282,7 @@ conn.sendFile(m.chat, haha, 'error.jpg', `_${command}_`, m, null, fake);
   }}
 handler.command = handler.help = ['akira', 'akiyama', 'anna', 'asuna', 'ayuzawa', 'boruto', 'chiho', 'chitoge', 'deidara', 'erza', 'elaina', 'eba', 'emilia', 'hestia', 'hinata', 'inori', 'isuzu', 'itachi', 'itori', 'kaga', 'kagura', 'kaori', 'keneki', 'kotori', 'kurumi', 'madara', 'mikasa', 'miku', 'minato', 'naruto', 'nezuko', 'sagiri', 'sasuke', 'sakura', 'cosplay', 'blackpink', 'cristianoronaldo', 'cr7', 'cat', 'itzy', 'kpopitzy', 'kpop', 'loli', 'lolivid', 'lolivideos', 'lolívid', 'meme', 'memes', 'meme2', 'memes2', 'messi', 'neko', 'ppcp', 'ppcouple', 'waifu', 'wpmontaña', 'pubg', 'wpgaming', 'wpaesthetic', 'wprandom', 'coffee', 'pentol', 'caricatura', 'ciberespacio', 'technology', 'doraemon', 'hacker', 'planeta', 'randomprofile', 'wpaesthetic2', 'wpvehiculo', 'wallhp', 'wpmoto'];
 handler.tags = ['randow'];
-handler.register = true
+handler.register = false
 handler.limit = 1
 export default handler;
 
