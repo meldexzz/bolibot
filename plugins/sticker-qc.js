@@ -1,5 +1,6 @@
 import { sticker } from '../lib/sticker.js';
-import axios from 'axios';
+import { createCanvas, loadImage } from 'canvas';  // Importamos Canvas
+import { MessageType } from '@adiwajshing/baileys'; // Asegúrate de que sea compatible con tu librería
 
 const handler = async (m, {conn, args, usedPrefix, command}) => {
     let text;
@@ -21,47 +22,33 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
         return m.reply('*⚠️ El texto no puede tener más de 45 caracteres*');
     }
 
-    // Obtener el perfil del usuario o usar una imagen predeterminada
-    const pp = await conn.profilePictureUrl(m.sender).catch(() => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
-    const nombre = await conn.getName(m.sender);
+    // Crea un lienzo para generar la imagen con canvas
+    const canvas = createCanvas(512, 512); // Tamaño de la imagen
+    const ctx = canvas.getContext('2d');
 
-    // Crear el objeto para la API con el texto y fondo negro
-    const obj = {
-        "type": "quote",
-        "format": "png",
-        "backgroundColor": "#000000", // Fondo negro
-        "width": 512,
-        "height": 768,
-        "scale": 2,
-        "messages": [{
-            "entities": [],
-            "avatar": true,
-            "from": {
-                "id": 1,
-                "name": `${nombre}`,
-                "photo": { "url": pp }
-            },
-            "text": text,
-            "replyMessage": {}
-        }]
-    };
+    // Fondo negro
+    ctx.fillStyle = '#000000'; // Establece el fondo negro
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Llamada a la API para generar la imagen
-    try {
-        const response = await axios.post('https://bot.lyo.su/quote/generate', obj, {
-            headers: { 'Content-Type': 'application/json' }
-        });
-        
-        const buffer = Buffer.from(response.data.result.image, 'base64');
-        
-        // Generar el sticker con la imagen recibida
-        let stiker = await sticker(buffer, false, global.packname, global.author);
-        
-        if (stiker) {
-            return conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, true);
-        }
-    } catch (error) {
-        console.error(error);
+    // Texto blanco
+    ctx.fillStyle = '#FFFFFF'; // Establece el color del texto a blanco
+    ctx.font = '30px Arial';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    // Ajusta el texto para que se dibuje dentro de la imagen
+    ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+
+    // Convierte el lienzo a un buffer en formato PNG
+    const buffer = canvas.toBuffer('image/png');
+
+    // Crea el sticker con el buffer generado
+    let stiker = await sticker(buffer, false, global.packname, global.author);
+
+    // Envía el sticker al chat
+    if (stiker) {
+        return conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, true);
+    } else {
         return m.reply("Hubo un error al generar el sticker.");
     }
 };
