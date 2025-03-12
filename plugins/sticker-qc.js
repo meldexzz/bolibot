@@ -1,6 +1,7 @@
-import { sticker } from '../lib/sticker.js';
-import axios from 'axios';
-
+ import {WAMessageStubType} from '@whiskeysockets/baileys';
+import PhoneNumber from 'awesome-phonenumber'
+import chalk from 'chalk'
+import { watchFile } from 'fs'
 
 const handler = async (m, {conn, args, usedPrefix, command}) => {
     const datas = global
