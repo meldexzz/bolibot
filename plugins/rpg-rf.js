@@ -115,7 +115,7 @@ delete global.db.data.tempCharacter;
 handler.help = ['rf', 'rw'];
 handler.tags = ['gacha'];
 handler.command = ['rf', 'rw'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
 
