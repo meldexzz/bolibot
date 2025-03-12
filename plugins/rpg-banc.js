@@ -42,6 +42,6 @@ await m.reply(`*[ 🏦 ] Has Retirado (${count}) dinero del Banco*`)}
 handler.help = ['dep', 'retirar']
 handler.tags = ['econ']
 handler.command = /^(dep|depositar|retirar|toremove)$/i
-handler.register = true
+handler.register = false
 
 export default handler 
