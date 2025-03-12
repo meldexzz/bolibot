@@ -12,6 +12,6 @@ conn.reply(m.chat, `@${m.sender.split('@')[0]} (${global.db.data.users[m.sender]
 handler.help = ['divorce <@tag>'];
 handler.tags = ['econ'];
 handler.command = ['divorce'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
