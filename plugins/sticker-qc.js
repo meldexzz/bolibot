@@ -23,5 +23,5 @@ if (stiker) return conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { c
 handler.help = ['qc'];
 handler.tags = ['sticker'];
 handler.command = /^(qc)$/i;
-handler.register = true
+handler.register = false
 export default handler;
