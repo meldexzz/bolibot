@@ -9,7 +9,7 @@ global.db.data.users[m.sender].lastwork = new Date() * 1;
 handler.help = ['work', 'trabaja', 'w']
 handler.tags = ['econ']
 handler.command = /^(work|trabajar|chambear|w|chamba)$/i
-handler.register = true
+handler.register = false
 export default handler
 
 function msToTime(duration) {
