@@ -19,7 +19,7 @@ let handler = async (m, { conn, isROwner, isOwner }) => {
 
   
   const fileExtension = mime.split('/')[1]
-  const filePath = path.join(dirPath, `${m.chat}.${fileExtension}`)
+  const filePath = path.join(dirPath, `${m.chat}.jpg`)
   fs.writeFileSync(filePath, media)
 
   await conn.reply(m.chat, '_*La imagen de bienvenida ha sido configurada.*_', m)
