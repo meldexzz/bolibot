@@ -268,7 +268,7 @@ let j = ps.getRandom()
 let k = Math.floor(Math.random() * 70);
 let x = `${pickRandom(['🤓','😅','😂','😳','😎', '🥵', '😱', '🤑', '🙄', '💩','🍑','🤨','🥴','🔥','👇🏻','😔', '👀','🌚'])}`
 let l = Math.floor(Math.random() * x.length);
-let vn = `https://hansxd.nasihosting.com/sound/sound${k}.mp3`
+let vn = ``
 let top = `*${x} Top 10 ${text} ${x}*
     
 *1. ${user(a)}*
@@ -282,14 +282,13 @@ let top = `*${x} Top 10 ${text} ${x}*
 *9. ${user(i)}*
 *10. ${user(j)}*`
 m.reply(top, null, { mentions: [a, b, c, d, e, f, g, h, i, j]})
-conn.sendFile(m.chat, vn, 'error.mp3', null, m, true, {
+conn.sendFile(m.chat, vn, null, m, true, {
 type: 'audioMessage',
 ptt: true })}
 
 //------------------------------------------------------------------------------------
  
  if (command == 'topgays') {
-let vn = 'https://qu.ax/HfeP.mp3'
 let top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
     
 *_1.- 🏳️‍🌈 ${user(a)}_* 🏳️‍🌈
@@ -310,7 +309,6 @@ ptt: true })}
 //------------------------------------------------------------------------------------ 
      
 if (command == 'topotakus') {
-let vn = 'https://qu.ax/ZgFZ.mp3'
 let top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
     
 *_1.- 💮 ${user(a)}_* 💮
@@ -324,7 +322,7 @@ let top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
 *_9.- 💮 ${user(i)}_* 💮
 *_10.- 🌷 ${user(j)}_* 🌷`
 m.reply(top, null, { mentions: conn.parseMention(top) })
-conn.sendFile(m.chat, vn, 'otaku.mp3', null, m, true, {
+conn.sendFile(m.chat, vn, null, m, true, {
 type: 'audioMessage', 
 ptt: true 
 })}
