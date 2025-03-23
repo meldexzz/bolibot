@@ -21,7 +21,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       } catch (e) {
         console.error(e)
       } finally {
-        //conn.reply(m.chat, `Calma crack estoy haciendo tu sticker 👏\n\n> *Recuerda los video son de 7 segundos*`, m)
         if (!stiker) {
           if (/webp/g.test(mime)) out = await webp2png(img)
           else if (/image/g.test(mime)) out = await uploadImage(img)
@@ -39,7 +38,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!stiker) stiker = e
   } finally {
     if (stiker) {
-      // Aquí se eliminó el bloque contextInfo con 'isForwarded' y 'forwardingScore'
+      // Se eliminó 'contextInfo' completamente para evitar marcas de 'canal' y 'reenviado'
       conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, true)
     } else {
       return m.reply(`𝘙𝘦𝘴𝘱𝘰𝘯𝘥𝘦 𝘢 𝘶𝘯𝘢 𝘪𝘮𝘢𝘨𝘦𝘯/𝘷𝘪𝘥𝘦𝘰 𝘱𝘢𝘳𝘢 𝘤𝘳𝘦𝘢𝘳 𝘦𝘭 𝘴𝘵𝘪𝘤𝘬𝘦𝘳 🥖`)
