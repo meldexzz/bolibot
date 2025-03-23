@@ -26,7 +26,7 @@ m.reply(`⚠️ *_Grupo ${isClose == 'announcement' ? 'cerrado' : 'abierto'} ${a
 if (args[1]) {
 setTimeout(async () => {
 await conn.groupSettingUpdate(m.chat, `${isClose == 'announcement' ? 'not_announcement' : 'announcement'}`).then(async (_)=>{
-conn.reply(m.chat, `${isClose == 'not_announcement' ? '*El grupo ha sido cerrado, ¡ahora solo los administradores pueden enviar mensajes!*' : '*El grupo se ha abierto, ¡ahora todos los miembros pueden enviar mensajes!*'}!`);
+conn.reply(m.chat, `${isClose == 'not_announcement' ? ''}!`);
 })}, timeoutset)}};
 handler.help = ['grouptime *<open/close>* *<número>*'];
 handler.tags = ['group'];
