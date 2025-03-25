@@ -63,7 +63,7 @@ conn.reply(m.chat, personalidad, m, { mentions: conn.parseMention(personalidad) 
 //------------------------------------------------------------------------------------
 
 if (command == 'ship' || command == 'shippear') {
-if (!text) return m.reply(`⚠️ 𝐄𝐬𝐜𝐫𝐢𝐛𝐚 𝐞𝐥 𝐧𝐨𝐦𝐛𝐫𝐞 𝐝𝐞 𝐝𝐨𝐬 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐬 𝐩𝐚𝐫𝐚 𝐜𝐚𝐥𝐜𝐮𝐥𝐚𝐫 𝐬𝐮𝐬 𝐚𝐦𝐨𝐫`) 
+if (!text) throw `⚠️ 𝐄𝐬𝐜𝐫𝐢𝐛𝐚 𝐞𝐥 𝐧𝐨𝐦𝐛𝐫𝐞 𝐝𝐞 𝐝𝐨𝐬 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐬 𝐩𝐚𝐫𝐚 𝐜𝐚𝐥𝐜𝐮𝐥𝐚𝐫 𝐬𝐮𝐬 𝐚𝐦𝐨𝐫`
 let [text1, ...text2] = text.split(' ')
 text2 = (text2 || []).join(' ')
 if (!text2) throw `⚠️ 𝐅𝐚𝐥𝐭𝐚 𝐞𝐥 𝐧𝐨𝐦𝐛𝐫𝐞 𝐝𝐞 𝐥𝐚 𝐬𝐞𝐠𝐮𝐧𝐝𝐚 𝐩𝐞𝐫𝐬𝐨𝐧𝐚`
@@ -268,7 +268,7 @@ let j = ps.getRandom()
 let k = Math.floor(Math.random() * 70);
 let x = `${pickRandom(['🤓','😅','😂','😳','😎', '🥵', '😱', '🤑', '🙄', '💩','🍑','🤨','🥴','🔥','👇🏻','😔', '👀','🌚'])}`
 let l = Math.floor(Math.random() * x.length);
-let vn = ``
+let vn = `https://hansxd.nasihosting.com/sound/sound${k}.mp3`
 let top = `*${x} Top 10 ${text} ${x}*
     
 *1. ${user(a)}*
@@ -282,13 +282,14 @@ let top = `*${x} Top 10 ${text} ${x}*
 *9. ${user(i)}*
 *10. ${user(j)}*`
 m.reply(top, null, { mentions: [a, b, c, d, e, f, g, h, i, j]})
-conn.sendFile(m.chat, vn, null, m, true, {
+conn.sendFile(m.chat, vn, 'error.mp3', null, m, true, {
 type: 'audioMessage',
 ptt: true })}
 
 //------------------------------------------------------------------------------------
  
  if (command == 'topgays') {
+let vn = 'https://qu.ax/HfeP.mp3'
 let top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
     
 *_1.- 🏳️‍🌈 ${user(a)}_* 🏳️‍🌈
@@ -309,6 +310,7 @@ ptt: true })}
 //------------------------------------------------------------------------------------ 
      
 if (command == 'topotakus') {
+let vn = 'https://qu.ax/ZgFZ.mp3'
 let top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
     
 *_1.- 💮 ${user(a)}_* 💮
@@ -322,7 +324,7 @@ let top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
 *_9.- 💮 ${user(i)}_* 💮
 *_10.- 🌷 ${user(j)}_* 🌷`
 m.reply(top, null, { mentions: conn.parseMention(top) })
-conn.sendFile(m.chat, vn, null, m, true, {
+conn.sendFile(m.chat, vn, 'otaku.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true 
 })}
@@ -490,7 +492,7 @@ console.log(e)}}
 handler.help = ["love", "gay2", "lesbiana", "pajero", "pajera", "puto", "puta", "manco", "manca", "rata", "prostituta", "prostituto", "amigorandom", "amistad", "regalar", "formarpareja", "gay", "personalidad", "pregunta", "ship", "topgays", "top", "topputos", "toplindos", "toppajer@s", "topshipost", "toppanafresco", "topgrasa", "topintegrantes", "topfamos@s", "topsostero", "top5parejas", "Doxxeo", "doxxeo", "follar"];
 handler.tags = ['game'];
 handler.command = /^love|gay2|lesbiana|pajero|pajera|puto|puta|manco|manca|rata|prostituta|prostituto|amigorandom|amistad|regalar|dar|enviar|meter|chupar|metersela|retar|formarpareja|formarparejas|gay|personalidad|pregunta|preguntas|apakah|ship|shippear|topgays|top|topputos|toplindos|toplind@s|toppajer@s|toppajeros|topshipost|topshiposters|toppanafresco|topgrasa|toppanafrescos|toplagrasa|topintegrante|topintegrantes|topotakus|topfamosos|topfamos@s|topsostero|topparejas|top5parejas|Doxxeo|doxxeo|doxxear|Doxxear|doxeo|doxear|doxxeame|doxeame|ruletas|ruleta|suerte|violar|follar/i
-handler.register = false
+handler.register = true
 export default handler
 
 function pickRandom(list) {
