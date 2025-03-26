@@ -78,7 +78,7 @@ _*🎶 Enviando música...*_`.trim();
                         await conn.sendMessage(m.chat, { audio: { url: downloadUrl4 }, fileName: 'audio.mp3', mimetype: 'audio/mpeg', caption: null, quoted: m });
                     
                     } catch (e4) {
-                        m.reply(`❌ Ocurrió un error al descargar el audio\nError:${e4.message}`);
+                        m.reply(`❌ Ocurrió un error al descargar el audio\nError: Asegurate de haber escrito bien la cancion o que exista en spotify.`);
                     }
                 }
             }
