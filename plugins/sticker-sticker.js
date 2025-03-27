@@ -42,7 +42,7 @@ else return m.reply(`𝘙𝘦𝘴𝘱𝘰𝘯𝘥𝘦 𝘢 𝘶𝘯𝘢 𝘪𝘮
 handler.help = ['sticker']
 handler.tags = ['sticker']
 handler.command = ['s', 'sticker'] 
-handler.register = true
+handler.register = false
 export default handler
 
 const isUrl = (text) => {
