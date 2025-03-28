@@ -78,5 +78,5 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 };
 
-handler.command = ['ytmp300'];
+handler.command = ['yt3'];
 export default handler;
