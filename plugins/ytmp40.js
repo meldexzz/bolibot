@@ -107,5 +107,5 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 };
 
-handler.command = ['ytmp40'];
+handler.command = ['ytmp400'];
 export default handler;
