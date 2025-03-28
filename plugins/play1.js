@@ -50,9 +50,9 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 ┗ 🎥 *Video:* _${usedPrefix}play6 ${text}_
 
 ⏳ *Espera un momento...*  
-⚙️ *Azura Ultra 2.0 está procesando tu música...*
+⚙️ *boli bot está procesando tu música...*
 ═══════════════════  
-     𖥔 Azura Ultra 2.0 Bot 𖥔`;
+     𖥔 boli bot Bot 𖥔`;
 
     await conn.sendFile(m.chat, thumbnail, 'imagen.jpg', infoMessage, m);
 
