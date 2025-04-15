@@ -8,7 +8,7 @@ var handler = async (m, { conn, participants, groupMetadata, args, text }) => {
 
     const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net';
 
-    let texto = `*MAPA BERMUDA REMASTERIZADA* ✅`.trim();
+    let texto = `> 𝘔𝘢𝘱𝘢 𝘣𝘦𝘳𝘮𝘶𝘥𝘢 𝘳𝘦𝘮𝘢𝘴𝘵𝘦𝘳𝘪𝘻𝘢𝘥𝘢.🥖`.trim();
 
     conn.sendFile(m.chat, pp, 'error.jpg', texto, m, true, { mentions: [...groupAdmins.map(v => v.id), owner] });
 
